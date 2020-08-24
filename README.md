@@ -1,5 +1,1 @@
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:IInsist/soframe-v1.0.git
-git push -u origin master
+SoFrame架构：基于SpringMVC、Spring、Mybatis-plus等集成开发的SpringBoot框架，团队1人。
