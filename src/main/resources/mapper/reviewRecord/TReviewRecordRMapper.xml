@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.soframe.module.reviewRecord.repository.TReviewRecordRRepository">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.com.soframe.module.reviewRecord.entity.TReviewRecordR">
+        <id column="id" property="id" />
+        <result column="review_record_id" property="reviewRecordId" />
+        <result column="create_time" property="createTime" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_user_name" property="createUserName" />
+        <result column="result" property="result" />
+        <result column="operation_type" property="operationType" />
+        <result column="opinion" property="opinion" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, review_record_id, create_time, create_user_id, create_user_name, result, operation_type, opinion
+    </sql>
+
+</mapper>
