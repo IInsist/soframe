@@ -1,7 +1,6 @@
 package cn.com.soframe.config;
 
 import com.alibaba.fastjson.support.spring.FastJsonRedisSerializer;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -63,6 +62,7 @@ public class RedisConfig {
     @ConditionalOnMissingBean(StringRedisTemplate.class)
     public StringRedisTemplate stringRedisTemplate(RedisConnectionFactory redisConnectionFactory){
         StringRedisTemplate template = new StringRedisTemplate();
+        //生成Bean
         template.setConnectionFactory(redisConnectionFactory);
         return template;
     }
