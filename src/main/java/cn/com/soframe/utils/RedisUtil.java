@@ -2,6 +2,7 @@ package cn.com.soframe.utils;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
@@ -12,6 +13,7 @@ import java.util.Set;
  * Redis缓存操作工具类<br>
  * 内部集成对Redis远程get、set、list等一系列原生方法的优化改造
  */
+@Component
 public class RedisUtil {
 
     @Resource
