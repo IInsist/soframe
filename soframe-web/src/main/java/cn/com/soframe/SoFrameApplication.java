@@ -12,11 +12,11 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 public class SoFrameApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(SoFrameApplication.class, args);
-		SpringApplication springApplication = new SpringApplication(SoFrameApplication.class);
+		SpringApplication.run(SoFrameApplication.class, args);
+		//SpringApplication springApplication = new SpringApplication(SoFrameApplication.class);
 		//设置banner打印在控制台
-		springApplication.setBannerMode(Banner.Mode.CONSOLE);
-		springApplication.run(args);
+		//springApplication.setBannerMode(Banner.Mode.CONSOLE);
+		//springApplication.run(args);
 	}
 
 }
