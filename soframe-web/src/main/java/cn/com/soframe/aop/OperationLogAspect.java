@@ -67,8 +67,9 @@ public class OperationLogAspect {
      * @param point
      * @param returnParam 返回参数名
      */
-    @AfterReturning(value = "logPoint()", returning = "returnParam")
+    @AfterReturning(value = "annotationLogPoint()", returning = "returnParam")
     public void doReturn(JoinPoint point,Object returnParam){
+
         System.out.println("返回通知！");
         System.out.println();
     }
