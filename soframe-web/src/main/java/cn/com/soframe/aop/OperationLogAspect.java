@@ -85,6 +85,10 @@ public class OperationLogAspect {
         System.out.println();
     }
 
+    /**
+     * 2.5、环绕通知
+     * @param point
+     */
     @Around(value = "logPoint()")
     public void doAround(JoinPoint point){
         System.out.println("环绕通知！");
