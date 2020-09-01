@@ -44,6 +44,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--AOP面向切面编程-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
 		<!--mybatis-plus 持久层  -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
@@ -113,6 +119,7 @@
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
 		</dependency>
+
 
 
 		<dependency>
