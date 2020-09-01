@@ -2,6 +2,7 @@ package cn.com.soframe.common.constant;
 
 /**
  * @author fujh
+ * @since 2020年9月1日09:11:24
  * soframe系统常量类
  */
 public class SoFrameSystemConstant {

@@ -4,7 +4,7 @@ import cn.com.soframe.common.constant.SoFrameSystemConstant;
 
 /**
  * @author fujh
- * @date 2020年8月31日15:08:32
+ * @since 2020年8月31日15:08:32
  * 系统基础枚举类信息
  */
 public enum SystemBaseInfo {
