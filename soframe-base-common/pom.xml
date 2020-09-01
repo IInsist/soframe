@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>cn.com.soframe</groupId>
     <artifactId>soframe-base-common</artifactId>
     <version>1.0</version>
     <name>soframe-base-common</name>

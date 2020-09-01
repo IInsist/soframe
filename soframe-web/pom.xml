@@ -14,6 +14,16 @@
     <version>1.0</version>
     <name>soframe-web</name>
     <description>So-Frame v1.0版本</description>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!--引用soframe-base-common通用包-->
+        <dependency>
+            <groupId>cn.com.soframe</groupId>
+            <artifactId>soframe-base-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
 
