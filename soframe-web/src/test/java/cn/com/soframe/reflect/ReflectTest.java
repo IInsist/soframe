@@ -3,6 +3,7 @@ package cn.com.soframe.reflect;
 import lombok.SneakyThrows;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
 /**
  * @author fujh
@@ -31,11 +32,15 @@ public class ReflectTest {
          * 2、通过Class.ForName来获取指定类路径的“反射类”
          */
         Class<?> strClass = Class.forName("java.lang.String");
+        Method[] methods = strClass.getMethods();
+        for (Method method : methods){
+            System.out.println("方法："+method.getName()+"  参数："+method.getParameterTypes());
+        }
         //获得到该Class对象的“构造对象”
         Constructor<?> constructor = strClass.getConstructor(String.class);
         //通过“构造对象”来创建实例
         Object strObj = constructor.newInstance("要输出的值，来了老弟");
-        System.out.println(String.valueOf(strObj));
+        System.out.println("真实的方法："+String.valueOf(strObj));
 
         /**
          * 3、通过.class来获取到一个“反射类”。
