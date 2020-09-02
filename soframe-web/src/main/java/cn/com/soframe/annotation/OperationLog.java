@@ -34,7 +34,8 @@ public @interface OperationLog {
     String content() default "";
 
     /**
-     * 操作类型:：默认 OTHER
+     * 操作类型：默认 OTHER
+     *
      * @return
      */
     String operationType() default SoFrameBusinessConstant.OPERATION_TYPE_OTHER;

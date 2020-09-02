@@ -11,7 +11,7 @@ public class SoFrameBusinessConstant {
     /***
      * 新增
      */
-    public static final String OPERATION_TYPE_INSERT = "ADD";
+    public static final String OPERATION_TYPE_INSERT = "INSERT";
 
     /**
      * 修改
