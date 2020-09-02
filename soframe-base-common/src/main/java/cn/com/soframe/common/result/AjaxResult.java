@@ -134,6 +134,14 @@ public class AjaxResult extends HashMap<String,Object> {
 
     /**
      * 响应成功
+     * @return
+     */
+    public static AjaxResult success(){
+        return AjaxResult.success("成功",null);
+    }
+
+    /**
+     * 响应成功
      * @param data
      * @return
      */

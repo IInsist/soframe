@@ -2,6 +2,7 @@ package cn.com.soframe.module.reviewRecord.controller;
 
 
 import cn.com.soframe.annotation.OperationLog;
+import cn.com.soframe.common.result.AjaxResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/reviewRecord")
-@Api(tags = "测试接口1")
+@Api(tags = "测试模块接口")
 public class TReviewRecordController {
 
     /**
@@ -27,9 +28,32 @@ public class TReviewRecordController {
      * @return
      */
     @OperationLog(modelId = "111111", modelName = "测试的啦")
-    @ApiOperation(value = "测试的接口啦",notes = "测试的接口1223442")
-    @GetMapping("/test")
-    public String test(){
-        return "helloworld";
+    @ApiOperation(value = "测试AjaxResult.success()接口",notes = "11111111")
+    @GetMapping("/success")
+    public AjaxResult success(){
+        return AjaxResult.success();
     }
+
+    /**
+     * 测试AjaxResult
+     * @return
+     */
+    @ApiOperation(value = "测试AjaxResult.error()接口",notes = "11111111")
+    @GetMapping("/error")
+    public AjaxResult error(){
+        return AjaxResult.error();
+    }
+
+    @ApiOperation(value = "测试inputStr",notes = "11111111")
+    @GetMapping("/str")
+    public String inputStr(){
+        return AjaxResult.error().toString();
+    }
+
+    @ApiOperation(value = "测试strS",notes = "11111111")
+    @GetMapping("/strS")
+    public String strS(){
+        return AjaxResult.success().toString();
+    }
+
 }
