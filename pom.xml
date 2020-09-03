@@ -50,6 +50,12 @@
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 
+		<!--quartz定时任务调度-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-quartz</artifactId>
+		</dependency>
+
 		<!--mybatis-plus 持久层  -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
