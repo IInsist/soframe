@@ -1,6 +1,6 @@
 SoFrame架构：基于SpringMVC、Spring、Mybatis-plus等集成开发的SpringBoot框架，团队1人。<br>
 一、预计集成如下框架<br>
-1、ES<br>
+1、Elasticsearch<br>
 2、Swagger<br>
 3、Shiro<br>
 4、Mybatis-plus<br>
