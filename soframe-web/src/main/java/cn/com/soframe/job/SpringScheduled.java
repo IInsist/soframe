@@ -1,7 +1,10 @@
 package cn.com.soframe.job;
 
+import cn.com.soframe.module.reviewRecord.service.TReviewRecordServiceI;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 /**
  * @author fujh
@@ -12,6 +15,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class SpringScheduled {
+
+    @Resource
+    private TReviewRecordServiceI reviewRecordService;
 
     /**
      * 使用@Scheduled注解创建调度任务
