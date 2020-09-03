@@ -1,4 +1,4 @@
-package cn.com.soframe.job;
+package cn.com.soframe.task;
 
 import cn.com.soframe.module.reviewRecord.service.TReviewRecordServiceI;
 import org.springframework.scheduling.annotation.Scheduled;

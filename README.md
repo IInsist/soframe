@@ -6,10 +6,10 @@ SoFrame架构：基于SpringMVC、Spring、Mybatis-plus等集成开发的SpringB
 4、Mybatis-plus<br>
 5、Quartz<br>
 6、Spring-cloud<br>
-7、kafka<br>
+7、kafka分布式基于发布/订阅的消息系统<br>
 8、Redis<br>
 9、SpringAOP<br>
 <br>
 二、现已集成框架<br>
 1、已集成Redis缓存，可通过cn.com.soframe.utils.RedisUtil进行调用。<br>
-2、已集成SpringAOP，可查看cn.com.soframe.aop.OperationLogAspect进行使用。
+2、已集成SpringAOP，可查看cn.com.soframe.aspect.OperationLogAspect进行使用。
