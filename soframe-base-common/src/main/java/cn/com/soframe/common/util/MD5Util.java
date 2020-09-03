@@ -12,6 +12,7 @@ public class MD5Util {
 
     /**
      * MD5加盐：SOFRAME
+     * 加盐目的为加大暴利破解加密
      */
     public static final String salt = "SOFRAME";
 
