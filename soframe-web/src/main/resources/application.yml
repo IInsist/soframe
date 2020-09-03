@@ -6,6 +6,9 @@ server:
 
 ##2、spring配置
 spring:
+#  profiles:
+#    include:
+#      quartz  #引用任务调度配置
   #2.1 应用名
   application:
     name: soframe-v1.0
