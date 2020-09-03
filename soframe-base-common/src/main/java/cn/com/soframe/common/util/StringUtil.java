@@ -10,10 +10,11 @@ import java.util.UUID;
 public class StringUtil {
 
     /**
-     * 获取到UUID
+     * 获取UUID
      * @return
      */
     public static String getUuid(){
+        //java.util.UUID自带UUID工具类
         UUID uuid = UUID.randomUUID();
         return uuid.toString().replace("-","").toLowerCase();
     }
