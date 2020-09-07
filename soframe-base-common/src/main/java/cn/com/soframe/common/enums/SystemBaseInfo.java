@@ -11,11 +11,11 @@ public enum SystemBaseInfo {
 
     version1("1.0","SoFrame架构：基于SpringMVC、Spring、Mybatis-plus等集成开发的SpringBoot框架，团队1人。","现已集成Redis缓存，可通过cn.com.soframe.utils.RedisUtil进行调用");
 
-    private String systemName = SoFrameSystemConstant.SYSTEM_NAME;
+    private static final String systemName = SoFrameSystemConstant.SYSTEM_NAME;
     private String version;
-    private String author = SoFrameSystemConstant.SYSTEM_AUTHOR;
-    private String phone = SoFrameSystemConstant.SYSTEM_AUTHOR_PHONE;
-    private String email = SoFrameSystemConstant.SYSTEM_AUTHOR_EMAIL;
+    private static final String author = SoFrameSystemConstant.SYSTEM_AUTHOR;
+    private static final String phone = SoFrameSystemConstant.SYSTEM_AUTHOR_PHONE;
+    private static final String email = SoFrameSystemConstant.SYSTEM_AUTHOR_EMAIL;
     private String content;
     private String remark;
 
