@@ -152,4 +152,16 @@
 
 	</build>
 
+	<repositories>
+		<!--alibaba镜像库-->
+		<repository>
+			<id>public</id>
+			<name>aliyun nexus</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
 </project>
