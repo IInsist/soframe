@@ -1,5 +1,8 @@
 package cn.com.soframe.kafka;
 
+import cn.com.soframe.kafka.entity.KafkaMessage;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -21,14 +24,20 @@ public class KafkaProducer {
     private KafkaTemplate<String ,String> kafkaTemplate;
 
     /**
-     * 获取消息
-     * @param record
-     * @return
+     * 发送消息
+     * @param message
      */
-    @KafkaListener(topics = "kafka_topic1")
-    public Object getMessage(ConsumerRecord<?,?> record) {
-        System.out.println("Kafka Messave key:"+record.key());
-        System.out.println("Kafka Messave value:"+record.value());
-        return record;
+    public void sendMessage(KafkaMessage message){
+        kafkaTemplate.send("kafka_topic1", JSON.toJSONString(message));
     }
+
+    /**
+     * 发送消息
+     * @param key
+     * @param message
+     */
+    public void sendMessage(String key, KafkaMessage message){
+        kafkaTemplate.send("kafka_topic1" ,key , JSONObject.toJSONString(message));
+    }
+
 }

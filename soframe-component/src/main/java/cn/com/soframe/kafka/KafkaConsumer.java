@@ -4,7 +4,8 @@ import cn.com.soframe.kafka.entity.KafkaMessage;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
@@ -23,20 +24,14 @@ public class KafkaConsumer {
     private KafkaTemplate<String ,String> kafkaTemplate;
 
     /**
-     * 发送消息
-     * @param message
+     * 获取消息
+     * @param record
+     * @return
      */
-    public void sendMessage(KafkaMessage message){
-        kafkaTemplate.send("kafka_topic1", JSON.toJSONString(message));
+    @KafkaListener(topics = "kafka_topic1")
+    public Object getMessage(ConsumerRecord<?,?> record) {
+        System.out.println("Kafka Messave key:"+record.key());
+        System.out.println("Kafka Messave value:"+record.value());
+        return record;
     }
-
-    /**
-     * 发送消息
-     * @param key
-     * @param message
-     */
-    public void sendMessage(String key, KafkaMessage message){
-        kafkaTemplate.send("kafka_topic1" ,key ,JSONObject.toJSONString(message));
-    }
-
 }
