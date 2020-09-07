@@ -1,0 +1,7 @@
+##1、spring配置
+spring:
+  profiles:
+    include:
+      kafka  #引用kafka配置
+  application:
+    name: so-frame-component

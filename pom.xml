@@ -8,7 +8,8 @@
 	<modules>
 		<module>soframe-base-common</module>
 		<module>soframe-web</module>
-	</modules>
+        <module>soframe-component</module>
+    </modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -125,8 +126,6 @@
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
 		</dependency>
-
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
