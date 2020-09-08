@@ -1,7 +1,7 @@
 #1、SpringBoot集成Kafka
 spring:
   kafka:
-    bootstrap-servers: 127.0.0.1:9092
+    bootstrap-servers: 127.0.0.1:9092  #kafka服务地址
     producer:
       # 发生错误后，消息重发的次数。
       retries: 0

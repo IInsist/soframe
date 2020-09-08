@@ -5,3 +5,12 @@ spring:
       kafka  #引用kafka配置
   application:
     name: so-frame-component
+
+kafka:
+  #自定义kafka消费者主题
+  topic:
+    group-id: topicGroupId  #消费者集合ID
+    topic-name: #定义消费者主题
+      - topic1
+      - topic2
+      - topic3

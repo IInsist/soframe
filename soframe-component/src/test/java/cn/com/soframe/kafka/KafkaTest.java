@@ -1,7 +1,6 @@
 package cn.com.soframe.kafka;
 
 import cn.com.soframe.kafka.entity.KafkaMessage;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,5 +32,4 @@ public class KafkaTest {
     public void sendMessage(){
         producer.sendMessage(new KafkaMessage("helloworld"));
     }
-
 }
