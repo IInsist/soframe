@@ -1,7 +1,7 @@
 #1、SpringBoot集成Kafka
 spring:
   kafka:
-    bootstrap-servers: 127.0.0.1:9092  #kafka服务地址
+    bootstrap-servers: 192.168.207.119:9092  #kafka服务地址
     producer:
       # 发生错误后，消息重发的次数。
       retries: 0
@@ -30,6 +30,8 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       # 值的反序列化方式
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      # 消费者组织ID
+      group-id: soframeGroupId
     listener:
       # 在侦听器容器中运行的线程数。
       concurrency: 5

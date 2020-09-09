@@ -12,6 +12,14 @@
     <groupId>cn.com.soframe</groupId>
     <artifactId>soframe-base-common</artifactId>
     <version>1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-core</artifactId>
+            <version>3.2.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <name>soframe-base-common</name>
     <description>So-Frame v1.0版本-通用包</description>
 

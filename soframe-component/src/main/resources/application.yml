@@ -9,7 +9,7 @@ spring:
 kafka:
   #自定义kafka消费者主题
   topic:
-    group-id: topicGroupId  #消费者集合ID
+    #group-id: soframeGroupId  #消费者集合ID
     topic-name: #定义消费者主题
       - topic1
       - topic2

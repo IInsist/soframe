@@ -1,6 +1,5 @@
 package cn.com.soframe.kafka.entity;
 
-import com.alibaba.fastjson.JSON;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
