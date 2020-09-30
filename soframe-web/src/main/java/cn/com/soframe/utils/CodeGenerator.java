@@ -61,10 +61,10 @@ public class CodeGenerator {
         DataSourceConfig dsc = new DataSourceConfig();
         //设置数据库类型
         dsc.setDbType(DbType.MYSQL);
-        dsc.setUrl("jdbc:mysql://121.37.27.157:9431/db_portal?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC");
         dsc.setDriverName("com.mysql.jdbc.Driver");
-        dsc.setUsername("taojy");
-        dsc.setPassword("Thinvent@1");
+        dsc.setUsername("test");
+        dsc.setPassword("test");
         mpg.setDataSource(dsc);
 
 

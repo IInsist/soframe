@@ -30,6 +30,8 @@ public class KafkaTest {
      */
     @Test
     public void sendMessage(){
+        System.out.println("发送消息");
         producer.sendMessage(new KafkaMessage("helloworld"));
+        System.out.println("接受消息");
     }
 }

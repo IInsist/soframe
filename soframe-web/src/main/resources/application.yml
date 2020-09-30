@@ -17,9 +17,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource #数据库连接池
     driver-class-name: com.mysql.jdbc.Driver #驱动
     druid:
-      url: jdbc:mysql://121.37.27.157:9431/db_portal?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&autoReconnect=true&failOverReadOnly=false
-      username: taojy
-      password: Thinvent@1
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&autoReconnect=true&failOverReadOnly=false
+      username: test
+      password: test
       # 初始连接数
       initialSize: 5
       # 最小连接池数量
