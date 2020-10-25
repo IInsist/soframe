@@ -100,8 +100,8 @@ logging:
   file:
     name: soframe-v1.0-%d{yyyy-MM-dd}.log  #输出日志文件名称
     path: ./logs/  #输出日志路径
-  pattern:
-    level: info  #root日志输出等级为info 日志等级排序：TRAC《 DEBUG《 INFO《 WARN《 ERROR《 FATAL ， OFF（关闭）
+  level:
+    root: info  #root日志输出等级为info 日志等级排序：TRAC《 DEBUG《 INFO《 WARN《 ERROR《 FATAL ， OFF（关闭）
 
 
 ##自定义配置
