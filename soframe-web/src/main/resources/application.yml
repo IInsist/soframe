@@ -95,7 +95,16 @@ mybatis-plus:
     # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+##4、日志配置
+logging:
+  file:
+    name: soframe-v1.0-%d{yyyy-MM-dd}.log  #输出日志文件名称
+    path: ./logs/  #输出日志路径
+  level: info  #root日志输出等级为info 日志等级排序：TRACE < DEBUG < INFO < WARN < ERROR < FATAL ， OFF（关闭）
+
+
 ##自定义配置
 my-config:
   system-version: 1.0  #系统版本
   springfox-swagger2-enable: true  #是否启用swagger
+
